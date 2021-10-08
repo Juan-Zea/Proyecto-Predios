@@ -34,9 +34,9 @@ exports.up = function(knex) {
             .createTable('construciones',function(table){
                 table.increments().primary()
                 table.integer('numero_pisos').notNullable()
-                table.integer('area_total').notNullable()
+                table.string('area_total').notNullable()
                 table.string('tipo_construcion',60).notNullable()
-                table.integer('predio_id').references('numero_predial').inTable('predios')
+                table.integer('predio_id').references('numero_predial').inTable('predios').notNullable()
                 table.integer('terreno_id').references('id').inTable('terrenos')
             })
             .createTable('propietarios_juridicos',function(table){

@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "apollo-boost": "^0.4.9",
     "graphql": "^15.6.1",
     "graphql-tag": "^2.12.5",
@@ -22,4 +26,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9"
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16"
+  }
+}

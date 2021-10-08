@@ -1,11 +1,13 @@
 import React from 'react';
 import Container from '../Components/Container';
-import ApolloClient from "apollo-boost";
-import {ApolloProvider} from "@apollo/react-hooks";
-
-const clietn = new ApolloClient({
-  uri: 'http://localhost:8080/graphql'
-})
 
 const Index = () => {
-  
+    return ( 
+        <div>
+            <Container/>
+            <h1 className="p-4 text-3xl font-light">Bien venido</h1>
+        </div>
+     );
+}
+ 
+export default Index;
