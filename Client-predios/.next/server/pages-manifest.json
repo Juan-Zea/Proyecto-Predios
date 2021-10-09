@@ -3,5 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/listarpredios": "pages/listarpredios.js",
-  "/agregarconstruccion": "pages/agregarconstruccion.js"
+  "/agregarterreno": "pages/agregarterreno.js"
 }
