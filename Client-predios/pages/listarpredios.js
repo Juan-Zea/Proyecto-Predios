@@ -1,8 +1,9 @@
 import React, { useState,useEffect} from 'react';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useRouter,usePara} from 'next/router';
 import {useQuery,useMutation}from '@apollo/react-hooks'
 import {gql} from 'apollo-boost'
-import { faTrashAlt,faPen,faMapMarker,faHotel, faThermometer } from '@fortawesome/free-solid-svg-icons'
+import { faTrashAlt,faPen,faMapMarker,faHotel, faThermometer,faUser,faUserTie } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Container from '../Components/Container';
@@ -58,9 +59,9 @@ const ListPredios =  () => {
                             terrenoId ? (<a>Terreno propio</a>):(<a>Ejido</a>)
                         }</span>
                         <button className="m-5 text-2xl" onClick={()=>dropPredio(numeroPredial)}><FontAwesomeIcon icon={faTrashAlt}/>Eliminar</button>
-                        <button className="m-5 text-2xl" onClick={()=>navigate.push("/updatepredio")}><FontAwesomeIcon icon={faPen}/>Actualizar</button>
+                        <button className="m-5 text-2xl" onClick={()=>navigate.push(`/predio_actualizar/${numeroPredial}`)} ><FontAwesomeIcon icon={faPen}/>Actualizar</button>
                         {
-                            terrenoId==null ? ( <button className="m-5 text-2xl" onClick={()=>navigate.push("/agregarterreno")}><FontAwesomeIcon icon={faMapMarker}/>Agregar Terreno</button>):(<></>)
+                            terrenoId==null ? ( <button className="m-5 text-2xl" onClick={()=>navigate.push(`/terreno/${numeroPredial}`)}><FontAwesomeIcon icon={faMapMarker}/>Agregar Terreno</button>):(<></>)
                         }
                        
                         <button className="m-5 text-2xl" onClick={()=>navigate.push("/agregarconstruccion")}><FontAwesomeIcon icon={faHotel}/>Agregar Construcción</button>

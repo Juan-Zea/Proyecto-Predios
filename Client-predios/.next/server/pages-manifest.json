@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/listarpredios": "pages/listarpredios.js",
-  "/agregarterreno": "pages/agregarterreno.js"
+  "/createpredio": "pages/createpredio.js",
+  "/listarpredios": "pages/listarpredios.js"
 }

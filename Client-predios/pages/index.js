@@ -5,7 +5,7 @@ const Index = () => {
     return ( 
         <div>
             <Container/>
-            <h1 className="p-4 text-3xl font-light">Bien venido</h1>
+            <h1 className="p-4 text-3xl font-light">Bienvenido</h1>
         </div>
      );
 }
